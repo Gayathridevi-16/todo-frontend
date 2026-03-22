@@ -72,7 +72,7 @@ export default function Todo(){
                 headers:{
                     'Content-Type':'application/json'
                 },
-                body:JSON.stringify({editTitle,editDescription})
+                body:JSON.stringify({title:editTitle,description:editDescription})
             }).then((res)=>{
                 if(res.ok){
                     //update item
