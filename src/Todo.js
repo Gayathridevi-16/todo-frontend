@@ -12,7 +12,7 @@ export default function Todo(){
     const [editTitle,setEditTitle]=useState("");
     const [editDescription,setEditDescription]=useState("");
 
-    const apiUrl="http://127.0.0.1:8000"
+    const apiUrl="https://todo-backend-rbsc.onrender.com"
     const handlesubmit=()=>{
         setError("");
         if(title.trim()!=='' && description.trim()!==''){
